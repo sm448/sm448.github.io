@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Beautiful Chachi ❤️</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  text-align: center;
+  padding: 20px;
+}
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.yes { background: #ff4d6d; color: white; }
+.no { background: #ccc; }
+.hidden { display: none; }
+</style>
+</head>
+
+<body>
+<div class="box">
+
+<h2>Question 1 💌</h2>
+<p><b>Chachi tumne sorry accept kr li..?</b></p>
+<button class="yes" onclick="q1yes()">Yes</button>
+<button class="no" onclick="q1no()">No</button>
+
+<p id="q1msg"></p>
+
+<div id="q2" class="hidden">
+  <h2>Question 2 😊</h2>
+  <p><b>Can I say something about you..?</b></p>
+  <button class="yes" onclick="q2yes()">Yes</button>
+  <button class="no" onclick="q2no()">No</button>
+  <p id="q2msg"></p>
+</div>
+
+<div id="q3" class="hidden">
+  <h2>Question 3 🙏</h2>
+  <p><b>Agr aapki izazat ho to aage kuchh bolu</b></p>
+  <button class="yes" onclick="whatsapp()">Whatsapp pr</button>
+  <button class="yes" onclick="here()">Idhar hi</button>
+</div>
+
+</div>
+
+<script>
+function q1yes(){
+  document.getElementById("q1msg").innerHTML =
+  "Thank you so much my beautiful chachi ❤️";
+  document.getElementById("q2").classList.remove("hidden");
+}
+function q1no(){
+  document.getElementById("q1msg").innerHTML =
+  "Please accept it 🥺";
+}
+function q2yes(){
+  document.getElementById("q2msg").innerHTML =
+  `❤️ M dil se bol rha chachi tum bahut hi sundar ho<br><br>
+   👀 Aankhein tumhari sch m bahut hi pyari hn or upar se itni pyari smile<br><br>
+   😊 Jab smile krti ho mano lgta h woww is se better pal kya ho skte hn<br><br>
+   🌸 Saundarya Rash ka best example samjh aata h tb<br><br>
+   👑 Pehle bhi achhi lgti thi but ab to ekdum princess lgti ho<br><br>
+   🔥 Engineers ki language m bole to ekdum chabi type… sch m bahut hott lgti ho`;
+  document.getElementById("q3").classList.remove("hidden");
+}
+function q2no(){
+  document.getElementById("q2msg").innerHTML =
+  "Please yes kar do na 🙏";
+}
+function whatsapp(){
+  window.location.href =
+  "https://wa.me/91XXXXXXXXXX";
+}
+function here(){
+  alert("Bas itna hi tha… dil se ❤️");
+}
+</script>
+
+</body>
+</html>
